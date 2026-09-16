@@ -2,9 +2,9 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.23** · **2026-09-16** · Windows 10/11 x64
+当前版本：**1.1.0-preview.24** · **2026-09-16** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.23/DongTools-Setup-1.1.0-preview.23-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.23) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.24/DongTools-Setup-1.1.0-preview.24-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.24) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
@@ -44,11 +44,13 @@
 
 ## 最近更新
 
+- **preview.24**：功能二新增简单参数入口，直接填写机型、各舱位数量和用料来源，避开 configuration 对象未传入的问题；旧入口仍兼容，菜单可查看实际连接器版本。已验证 A350/A330 各 500 套的创建、计算与导出。
+
 - **preview.23**：优化功能二构型参数兼容，提供完整调用样例和缺项提示，减少反复漏传参数；500 件总量按一批计算。已验证实际安装后的创建、计算与导出。
 - **preview.22**：材料试算与网页共用默认排料设置，包括允许 90° 旋转；明确的方向限制和用户余量仍保留。旧项目需按用户要求另存重算。
 - **preview.21**：普通材料用量请求默认先试算，列出条件和缺图项，只补问真正影响计算的信息。
 
-preview.23 已通过独立新装、preview.22→23 升级、旧数据保留，以及公开安装包完整下载和 SHA-256 校验。豆包实际会话表现仍应在更新并重新加载后核对。
+preview.24 已通过独立新装、preview.22→24 升级、旧数据保留，以及公开安装包完整下载和 SHA-256 校验。豆包实际会话表现仍应在更新并重新加载后核对。
 
 ## 使用范围
 
