@@ -2,15 +2,15 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.25** · **2026-09-17** · Windows 10/11 x64
+当前版本：**1.1.0-preview.26** · **2026-09-17** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.25/DongTools-Setup-1.1.0-preview.25-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.25) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.26/DongTools-Setup-1.1.0-preview.26-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.26) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
 ## 开始使用
 
-1. 下载约 586 MiB 的 `.exe` 安装包，双击安装，可选择安装位置。
+1. 下载约 498 MiB 的 `.exe` 安装包，双击安装，可选择安装位置。
 2. 打开“东的小工具”，点击“打开工具”，在浏览器中使用三个功能。
 3. 各功能页面的“使用说明”提供操作教程。
 
@@ -19,6 +19,8 @@
 ## 已安装用户怎么更新
 
 保存网页工作，在豆包暂停 `dong-tools-local` 连接器，然后点击主窗口的 **“检查更新”**，按提示完成升级。更新后重新启用连接器；若旧会话仍重复报同一参数错误，可新开对话重试。
+
+从 preview.26 起，短暂网络中断会自动重试；完整缓存通过当前发行清单校验后可直接复用。
 
 更新下载无需 GitHub 登录或下载令牌。升级会保留项目并建立备份。不要删除 `data` 排错；遇到失败可用“数据与日志”查看原因，或从上方发行页下载同一安装包后升级。
 
@@ -44,6 +46,8 @@
 
 ## 最近更新
 
+- **preview.26**：更新遇到短暂断线会自动重试；已完整下载的相同版本安装包通过校验后直接复用，避免再次下载。保留连接器占用检查、文件校验、项目备份和失败恢复。
+
 - **preview.25**：兼容豆包 2.29 新版连接器界面，修复自动接入；修复客舱标定、候选核对和排距修改时漏传 change 参数的问题。保留旧调用方式和已上传图纸，更新后重新启用连接器，再继续原任务。
 - **preview.24**：功能二新增简单参数入口，直接填写机型、各舱位数量和用料来源，避开 configuration 对象未传入的问题；旧入口仍兼容，菜单可查看实际连接器版本。已验证 A350/A330 各 500 套的创建、计算与导出。
 
@@ -51,7 +55,7 @@
 - **preview.22**：材料试算与网页共用默认排料设置，包括允许 90° 旋转；明确的方向限制和用户余量仍保留。旧项目需按用户要求另存重算。
 - **preview.21**：普通材料用量请求默认先试算，列出条件和缺图项，只补问真正影响计算的信息。
 
-本版发行核对包括独立新装、preview.24→25 升级与旧数据保留，以及公开安装包完整下载和 SHA-256 校验。客舱修改流程使用合成图纸验证，真实图纸仍需核对单位、尺寸和排号；豆包实际会话表现应在更新并重新加载后核对。
+本版发行核对包括独立新装、preview.22→26 升级与旧数据保留，以及公开安装包完整下载和 SHA-256 校验。客舱修改流程使用合成图纸验证，真实图纸仍需核对单位、尺寸和排号；豆包实际会话表现应在更新并重新加载后核对。
 
 ## 使用范围
 
