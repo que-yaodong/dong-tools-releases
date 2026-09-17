@@ -2,9 +2,9 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.27** · **2026-09-17** · Windows 10/11 x64
+当前版本：**1.1.0-preview.28** · **2026-09-17** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.27/DongTools-Setup-1.1.0-preview.27-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.27) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.28/DongTools-Setup-1.1.0-preview.28-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.28) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
@@ -46,6 +46,8 @@
 
 ## 最近更新
 
+- **preview.28**：修复新上传客舱图纸误用同名旧布局、将原图排距误报为已达目标的问题。新附件绑定原文件和转换快照，只复用已核实的尺寸标定；结果区分原排距、目标排距和测量版本。更新后重新加载豆包连接器。
+
 - **preview.27**：客舱任务优先复用已有布局，按原排号直接改排距、另存副本，减少重复导入和截图。网页与 AI 均支持 PDF 导出，内置中文字体；新矢量图优先按原线识别座椅和排号，缺项时明确提示。原图印刷尺寸及排距表仍需单独核对。
 
 - **preview.26**：更新遇到短暂断线会自动重试；已完整下载的相同版本安装包通过校验后直接复用，避免再次下载。保留连接器占用检查、文件校验、项目备份和失败恢复。
@@ -57,7 +59,7 @@
 - **preview.22**：材料试算与网页共用默认排料设置，包括允许 90° 旋转；明确的方向限制和用户余量仍保留。旧项目需按用户要求另存重算。
 - **preview.21**：普通材料用量请求默认先试算，列出条件和缺图项，只补问真正影响计算的信息。
 
-本版发行核对包括独立新装、preview.22→26 升级与旧数据保留，以及公开安装包完整下载和 SHA-256 校验。客舱修改流程使用合成图纸验证，真实图纸仍需核对单位、尺寸和排号；豆包实际会话表现应在更新并重新加载后核对。
+本版发行核对包括独立新装、preview.27→28 升级与旧数据保留，以及公开安装包完整下载和 SHA-256 校验。客舱来源校验已使用同名旧项目与真实 PDF 同时存在的场景回归；实际图纸仍需核对单位、尺寸和排号，豆包会话应在更新并重新加载后核对。
 
 ## 使用范围
 
