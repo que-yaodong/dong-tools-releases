@@ -2,15 +2,15 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.26** · **2026-09-17** · Windows 10/11 x64
+当前版本：**1.1.0-preview.27** · **2026-09-17** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.26/DongTools-Setup-1.1.0-preview.26-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.26) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.27/DongTools-Setup-1.1.0-preview.27-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.27) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
 ## 开始使用
 
-1. 下载约 498 MiB 的 `.exe` 安装包，双击安装，可选择安装位置。
+1. 下载完整的 `.exe` 安装包，双击安装，可选择安装位置。
 2. 打开“东的小工具”，点击“打开工具”，在浏览器中使用三个功能。
 3. 各功能页面的“使用说明”提供操作教程。
 
@@ -30,7 +30,7 @@
 | --- | --- |
 | 材料排料 | 导入 PDF 或裁片数据，核对尺寸与数量，按布宽、旋转、间距和余量计算排料及参考用量，保存和导出结果 |
 | 飞机椅布计算 | 按机型标准构型或自定义数量，使用内置定额或已计算排料来源估算椅布；区分单座与整批，避免重复乘数量 |
-| 客舱 LOPA | 导入并标定图纸，核对座椅、隔板和柜体占位，调整位置及排距，二维/三维查看，另存并导出支持的图纸格式 |
+| 客舱 LOPA | 导入并标定图纸，核对座椅、隔板和柜体占位，调整位置及排距，二维/三维查看，另存并导出 PDF、SVG、DXF 和布局文件 |
 
 ## 让豆包帮你操作
 
@@ -45,6 +45,8 @@
 连接器自带操作说明，无需另装技能包。AI 的工具调用、实际参数及输出仍需核对；连接成功不等于业务任务已经完成。连接器不可见时，应先在当前对话启用或重新加载，不必反复向 AI 重复已有参数。
 
 ## 最近更新
+
+- **preview.27**：客舱任务优先复用已有布局，按原排号直接改排距、另存副本，减少重复导入和截图。网页与 AI 均支持 PDF 导出，内置中文字体；新矢量图优先按原线识别座椅和排号，缺项时明确提示。原图印刷尺寸及排距表仍需单独核对。
 
 - **preview.26**：更新遇到短暂断线会自动重试；已完整下载的相同版本安装包通过校验后直接复用，避免再次下载。保留连接器占用检查、文件校验、项目备份和失败恢复。
 
