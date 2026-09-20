@@ -2,9 +2,9 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.32** · **2026-09-20** · Windows 10/11 x64
+当前版本：**1.1.0-preview.33** · **2026-09-20** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.32/DongTools-Setup-1.1.0-preview.32-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.32) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.33/DongTools-Setup-1.1.0-preview.33-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.33) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
@@ -25,6 +25,8 @@
 更新下载无需 GitHub 登录或下载令牌。升级会保留项目并建立备份。不要删除 `data` 排错；遇到失败可用“数据与日志”查看原因，或从上方发行页下载同一安装包后升级。
 
 ## 三个功能
+
+preview.33：AI 主动对照原图核对裁片，未能核实的项单独说明；连续相同排距合并标注，例如 `8×29″=232″`；飞机椅布反馈使用完整材料名称及已知件号，例如 **C430Z24396 布料**。
 
 | 功能 | 可以做什么 |
 | --- | --- |
