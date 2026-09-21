@@ -2,9 +2,9 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.36** · **2026-09-21** · Windows 10/11 x64
+当前版本：**1.1.0-preview.37** · **2026-09-22** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.36/DongTools-Setup-1.1.0-preview.36-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.36) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.37/DongTools-Setup-1.1.0-preview.37-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.37) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
@@ -18,7 +18,7 @@
 
 ## 已安装用户怎么更新
 
-保存网页工作，在豆包暂停 `dong-tools-local` 连接器，然后点击主窗口的 **“检查更新”**，按提示完成升级。更新后重新加载连接器，取得 **MCP 0.4.6、36 个工具**及新版说明；若当前对话仍保留旧工具信息，可新开对话。业务请求报缺项时，按返回的下一步修正，不反复上传同一文件或重试相同参数。
+保存网页工作，在豆包、Claude 等正在使用的 AI 客户端暂停 `dong-tools-local` 连接器，然后点击主窗口的 **“检查更新”**，按提示完成升级。更新后重新加载连接器，取得 **MCP 0.4.6、36 个工具**及新版说明；若当前对话仍保留旧工具信息，可新开对话。业务请求报缺项时，按返回的下一步修正，不反复上传同一文件或重试相同参数。
 
 从 preview.26 起，短暂网络中断会自动重试；完整缓存通过当前发行清单校验后可直接复用。
 
@@ -50,6 +50,8 @@ preview.34 及以前先完成一次完整升级，取得新版更新器。此后
 连接器自带操作说明，无需另装技能包。AI 的工具调用、实际参数及输出仍需核对；连接成功不等于业务任务已经完成。连接器不可见时，应先在当前对话启用或重新加载，不必反复向 AI 重复已有参数。
 
 ## 最近更新
+
+- **preview.37**：原图表格、图例和统计区域提供完整上下文裁图与查看进度导航；空白图片明确提示，同一区域无进展重复查看会停止自动重试，可按需要明确重看。修复原站位缺字恢复、设备符号宿主矛盾、重复人数和局部排距说明核对。查看图片不代表来源审核通过；保留原图、项目和配对配置，完整任务十分钟目标仍待实际会话验证。
 
 - **preview.36**：附件上传失败后检查已接收内容并提供一次本机选文件恢复，减少中文路径反复试错。客舱局部图片从原 PDF 高清绘制，数字候选与原路径对应；仅为本次改动需要的安装基准和设备符号提供核对入口。原图导出移除程序追加的全舱排距清单，简短标注修改副本，详细记录仍保存在项目内。已有项目可直接重新导出。仍需真实原图依据，未承诺豆包整次任务固定耗时。
 
