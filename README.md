@@ -2,9 +2,9 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.40** · **2026-09-24** · Windows 10/11 x64
+当前版本：**1.1.0-preview.41** · **2026-09-25** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.40/DongTools-Setup-1.1.0-preview.40-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.40) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.41/DongTools-Setup-1.1.0-preview.41-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.41) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
@@ -49,7 +49,12 @@ preview.34 及以前先完成一次完整升级，取得新版更新器。此后
 
 连接器自带操作说明，无需另装技能包。AI 的工具调用、实际参数及输出仍需核对；连接成功不等于业务任务已经完成。连接器不可见时，应先在当前对话启用或重新加载，不必反复向 AI 重复已有参数。
 
+旧版首次升级到 preview.41 时，请先关闭正在浏览安装目录的资源管理器窗口，并暂停 AI 连接器；更新切换期间不要重新打开程序。新版本安装后会提供更准确的占用诊断、更新期间启动保护与失败恢复。旧版首次升级后若控制窗口未显示，可从托盘选择“显示控制窗口”；后续更新使用新版自动重开逻辑。
+
 ## 最近更新
+
+- **preview.41**：修复更新时目录占用检测遗漏、服务退出等待不足和更新期间重复启动的问题；保留具体失败原因，校验并复用完整缓存，修复更新后控制窗口隐藏的问题。项目与配对数据继续保留。
+
 
 - **preview.40**：新的客舱矢量图可以自动标定：比例、中心线和左右舷由原图站位、座椅对称和机身外形线自动得出并互相复核；识别出的座椅由原图印刷排号、座宽和统计表人数自动核对，AI 只把一段摘要交给用户确认，确认后一路完成标定、识别、转换和修改。修改范围内只标注被改排的旧排距尺寸会随修改一并删除，保存时默认导出 PDF。更新后重新加载连接器。
 
