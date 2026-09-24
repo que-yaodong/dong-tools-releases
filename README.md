@@ -2,9 +2,9 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.39** · **2026-09-24** · Windows 10/11 x64
+当前版本：**1.1.0-preview.40** · **2026-09-24** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.39/DongTools-Setup-1.1.0-preview.39-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.39) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.40/DongTools-Setup-1.1.0-preview.40-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.40) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
@@ -18,7 +18,7 @@
 
 ## 已安装用户怎么更新
 
-保存网页工作，在豆包、Claude 等正在使用的 AI 客户端暂停 `dong-tools-local` 连接器，然后点击主窗口的 **“检查更新”**，按提示完成升级。更新后重新加载连接器，取得 **MCP 0.4.7、37 个工具**及新版说明；若当前对话仍保留旧工具信息，可新开对话。业务请求报缺项时，按返回的下一步修正，不反复上传同一文件或重试相同参数。
+保存网页工作，在豆包、Claude 等正在使用的 AI 客户端暂停 `dong-tools-local` 连接器，然后点击主窗口的 **“检查更新”**，按提示完成升级。更新后重新加载连接器，取得 **MCP 0.4.8、37 个工具**及新版说明；若当前对话仍保留旧工具信息，可新开对话。业务请求报缺项时，按返回的下一步修正，不反复上传同一文件或重试相同参数。
 
 从 preview.26 起，短暂网络中断会自动重试；完整缓存通过当前发行清单校验后可直接复用。
 
@@ -50,6 +50,8 @@ preview.34 及以前先完成一次完整升级，取得新版更新器。此后
 连接器自带操作说明，无需另装技能包。AI 的工具调用、实际参数及输出仍需核对；连接成功不等于业务任务已经完成。连接器不可见时，应先在当前对话启用或重新加载，不必反复向 AI 重复已有参数。
 
 ## 最近更新
+
+- **preview.40**：新的客舱矢量图可以自动标定：比例、中心线和左右舷由原图站位、座椅对称和机身外形线自动得出并互相复核；识别出的座椅由原图印刷排号、座宽和统计表人数自动核对，AI 只把一段摘要交给用户确认，确认后一路完成标定、识别、转换和修改。修改范围内只标注被改排的旧排距尺寸会随修改一并删除，保存时默认导出 PDF。更新后重新加载连接器。
 
 - **preview.39**：新增客舱一步修改入口 `lopa_edit`：改排距、删排一次写全，预览后保存并导出；结果用一句话说明原排距→新排距、座位变化，以及修改范围外随之改变的间距。图上未能随修改更新的旧排距文字会如实列为未完成，不再报告全部完成。同一图纸同一页重复导入时复用已转换的整舱底稿；已成功的请求再次提交直接返回原结果，同一请求连续失败会暂停并说明缺项；排号不存在或删排后排号含糊时直接询问。修复网络限流时“检查更新”误报失败。更新后重新加载连接器。
 
