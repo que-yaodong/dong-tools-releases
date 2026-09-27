@@ -2,9 +2,9 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.42** · **2026-09-25** · Windows 10/11 x64
+当前版本：**1.1.0-preview.43** · **2026-09-28** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.42/DongTools-Setup-1.1.0-preview.42-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.42) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.43/DongTools-Setup-1.1.0-preview.43-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.43) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
@@ -18,7 +18,7 @@
 
 ## 已安装用户怎么更新
 
-保存网页工作，在豆包、Claude 等正在使用的 AI 客户端暂停 `dong-tools-local` 连接器，然后点击主窗口的 **“检查更新”**，按提示完成升级。更新后重新加载连接器，取得 **MCP 0.4.8、37 个工具**及新版说明；若当前对话仍保留旧工具信息，可新开对话。业务请求报缺项时，按返回的下一步修正，不反复上传同一文件或重试相同参数。
+保存网页工作，在豆包、Claude 等正在使用的 AI 客户端暂停 `dong-tools-local` 连接器，然后点击主窗口的 **“检查更新”**，按提示完成升级。更新后重新加载连接器，取得 **MCP 0.4.8、38 个工具**及新版说明；若当前对话仍保留旧工具信息，可新开对话。业务请求报缺项时，按返回的下一步修正，不反复上传同一文件或重试相同参数。
 
 从 preview.26 起，短暂网络中断会自动重试；完整缓存通过当前发行清单校验后可直接复用。
 
@@ -52,6 +52,8 @@ preview.34 及以前先完成一次完整升级，取得新版更新器。此后
 从 preview.40 及以前首次升级到 preview.41 或更高版本时，请先关闭正在浏览安装目录的资源管理器窗口，并暂停 AI 连接器；更新切换期间不要重新打开程序。新版本安装后会提供更准确的占用诊断、更新期间启动保护与失败恢复。旧版首次升级后若控制窗口未显示，可从托盘选择“显示控制窗口”；后续更新使用新版自动重开逻辑。
 
 ## 最近更新
+
+- **preview.43**：原图核对保留同一来源已经通过的答案，升级后重新验证并沿用；一次列全需要核对的基准和范围，重复答案合并、冲突答案指出具体字段。新图提供有原图路径依据的建议，确认后仍走完整校验。方案受边界限制时提供经过预检的选择，明确显示异常大间距；等待核对或用户选择不再累计为同一业务失败。修复删排后排号字体、尺寸链缺段和小数位不一致，排号沿用原图笔画。继续包含更新占用恢复和豆包自动接入修复。新版工具及说明须重新加载。
 
 - **preview.42**：修复豆包连接器管理页搜索框名称变化导致自动接入失败的问题。兼容当前及旧名称，核对选中的连接器页和唯一搜索框，保留同名配置检查与重复添加保护；细化搜索定位和工具加载诊断。首次创建及重复接入已在真实客户端核验；继续保留 preview.41 的更新占用与恢复修复。
 
