@@ -2,9 +2,9 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.43** · **2026-09-28** · Windows 10/11 x64
+当前版本：**1.1.0-preview.44** · **2026-09-29** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.43/DongTools-Setup-1.1.0-preview.43-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.43) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.44/DongTools-Setup-1.1.0-preview.44-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.44) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
@@ -52,6 +52,8 @@ preview.34 及以前先完成一次完整升级，取得新版更新器。此后
 从 preview.40 及以前首次升级到 preview.41 或更高版本时，请先关闭正在浏览安装目录的资源管理器窗口，并暂停 AI 连接器；更新切换期间不要重新打开程序。新版本安装后会提供更准确的占用诊断、更新期间启动保护与失败恢复。旧版首次升级后若控制窗口未显示，可从托盘选择“显示控制窗口”；后续更新使用新版自动重开逻辑。
 
 ## 最近更新
+
+- **preview.44**：客舱方案受限时显示具体排侧、超出量、过道收窄和剩余宽度，以及跨排担架范围。有可靠原图内壁与间隙依据时核验靠窗边界；设施整体移动、保留或取消标记等组合先完整预检，列明排距、最大间隔及尾部空档，再由用户选择。已接受原图核对或同源另存成功后解除旧失败锁定，审计历史保留，新的真实错误仍受保护。沿用原图排号笔画、完整尺寸链及小数位。升级后重新加载连接器；豆包完整任务耗时仍以实际会话为准。
 
 - **preview.43**：原图核对保留同一来源已经通过的答案，升级后重新验证并沿用；一次列全需要核对的基准和范围，重复答案合并、冲突答案指出具体字段。新图提供有原图路径依据的建议，确认后仍走完整校验。方案受边界限制时提供经过预检的选择，明确显示异常大间距；等待核对或用户选择不再累计为同一业务失败。修复删排后排号字体、尺寸链缺段和小数位不一致，排号沿用原图笔画。继续包含更新占用恢复和豆包自动接入修复。新版工具及说明须重新加载。
 
