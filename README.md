@@ -2,11 +2,15 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.44** · **2026-09-29** · Windows 10/11 x64
+当前版本：**1.1.0-preview.45** · **2026-09-29** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.44/DongTools-Setup-1.1.0-preview.44-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.44) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.45/DongTools-Setup-1.1.0-preview.45-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.45) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
+
+## 本版更新
+
+修复更新查询限流后只能打开网页的问题；放宽完整包下载时间；修复 Windows 占用检查被系统同步句柄卡住。保留安装包校验、备份和失败回滚。
 
 ## 开始使用
 
@@ -22,7 +26,7 @@
 
 从 preview.26 起，短暂网络中断会自动重试；完整缓存通过当前发行清单校验后可直接复用。
 
-preview.34 及以前先完成一次完整升级，取得新版更新器。此后有新版本时，只下载内容发生变化的组件；程序、依赖、资源和识别环境分别校验，全部准备好后再切换，启动失败恢复旧版及项目。新电脑和恢复安装仍使用上方完整安装包。网络限流时会提供官方发行页，不把查询失败当成“已是最新版”。
+preview.34 及以前先完成一次完整升级，取得新版更新器。此后有新版本时，只下载内容发生变化的组件；程序、依赖、资源和识别环境分别校验，全部准备好后再切换，启动失败恢复旧版及项目。新电脑和恢复安装仍使用上方完整安装包。从 preview.45 起，网络限流时若已核实较新的完整包，会继续提示下载升级；没有可核实的新包时才提供恢复入口。旧版仍只打开网页时，需完整安装本版一次。
 
 更新下载无需 GitHub 登录或下载令牌。升级会保留项目并建立备份。不要删除 `data` 排错；遇到失败可用“数据与日志”查看原因，或从上方发行页下载同一安装包后升级。
 
