@@ -2,15 +2,17 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.45** · **2026-09-29** · Windows 10/11 x64
+当前版本：**1.1.0-preview.46** · **2026-10-08** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.45/DongTools-Setup-1.1.0-preview.45-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.45) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.46/DongTools-Setup-1.1.0-preview.46-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.46) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
 ## 本版更新
 
-修复更新查询限流后只能打开网页的问题；放宽完整包下载时间；修复 Windows 占用检查被系统同步句柄卡住。保留安装包校验、备份和失败回滚。
+修复客舱原图座椅和符号的绘制顺序、拖动预览，大图自动保存不再因同步基线占满缓存而报错；切换图纸时，旧同步请求不会写入另一张图。
+
+删排可保留其他原排号。缺少独立统计依据时，可明确选择带 TBC 与“审阅稿 / 未完成”标记的 PDF；审阅稿和正式成果分别校验，不能把原人均值反推成独立衣帽杆总长。正式完整成果仍需补齐实际依据。新版同时保留方案选择、原图尺寸链、数据备份和更新失败恢复。
 
 ## 开始使用
 
@@ -56,6 +58,8 @@ preview.34 及以前先完成一次完整升级，取得新版更新器。此后
 从 preview.40 及以前首次升级到 preview.41 或更高版本时，请先关闭正在浏览安装目录的资源管理器窗口，并暂停 AI 连接器；更新切换期间不要重新打开程序。新版本安装后会提供更准确的占用诊断、更新期间启动保护与失败恢复。旧版首次升级后若控制窗口未显示，可从托盘选择“显示控制窗口”；后续更新使用新版自动重开逻辑。
 
 ## 最近更新
+
+- **preview.45**：修复更新查询限流后只能打开网页的问题，放宽完整包下载时间，修复 Windows 占用检查被系统同步句柄卡住；保留安装包校验、备份和失败回滚。
 
 - **preview.44**：客舱方案受限时显示具体排侧、超出量、过道收窄和剩余宽度，以及跨排担架范围。有可靠原图内壁与间隙依据时核验靠窗边界；设施整体移动、保留或取消标记等组合先完整预检，列明排距、最大间隔及尾部空档，再由用户选择。已接受原图核对或同源另存成功后解除旧失败锁定，审计历史保留，新的真实错误仍受保护。沿用原图排号笔画、完整尺寸链及小数位。升级后重新加载连接器；豆包完整任务耗时仍以实际会话为准。
 
