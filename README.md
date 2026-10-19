@@ -2,19 +2,21 @@
 
 **材料排料 / 飞机椅布计算 / 客舱 LOPA 排布**
 
-当前版本：**1.1.0-preview.50** · **2026-10-19** · Windows 10/11 x64
+当前版本：**1.1.0-preview.51** · **2026-10-19** · Windows 10/11 x64
 
-[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.50/DongTools-Setup-1.1.0-preview.50-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.50) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
+[**下载安装包**](https://github.com/que-yaodong/dong-tools-releases/releases/download/desktop-v1.1.0-preview.51/DongTools-Setup-1.1.0-preview.51-win-x64.exe) · [本版说明与校验文件](https://github.com/que-yaodong/dong-tools-releases/releases/tag/desktop-v1.1.0-preview.51) · [全部版本](https://github.com/que-yaodong/dong-tools-releases/releases)
 
 本仓库提供公开安装包和更新文件，源码单独维护。安装包自带本机网页服务、计算服务、增强识别环境和 AI 连接器，**不需要另行部署服务器，也不需要安装 Node.js 或 Python**。
 
 ## 本版更新
 
-客舱改排遇到原图上需要局部确认的过道或内壁边界时，只核对该处，答案连同已核实的模板、统计和符号依据一起保留，不必重新看全图；连续排段核对改为逐段累积，失败记录不因无关旧依据而清空。全局过道与固定设施校验没有放宽。
+修复 preview.50 在项目较多时，“接入其他 AI”误报“本机 MCP 尚未连通”的问题。连接检查现在能完整读取分页后的项目列表，正确显示已连接的工具和项目数量；项目读取异常与真正的连接失败分别提示。
 
-压缩增排遇到跨排设施（如担架位）时，会先对“设施整体平移”“取消图面标记”等处置分别做完整预览，只列出可行项交由用户选择；选择与项目版本、来源依据绑定，过期或改动参数会被拒绝。修复新增排被相邻两条尺寸链重复标注的问题，同一排出现重叠标注时拒绝出图。单侧排距尺寸链、副本重开后的名称回写、继承符号接续和单侧改排范围也一并修复。
+检查过程只读取已有项目，保留项目、图纸和配对信息。已安装用户可通过“检查更新”获取本版；更新后重新“检查本机工具”，再“尝试自动接入豆包”。本次修复针对连接检查，豆包实际连接器配置和当前对话启用状态仍需在客户端确认。
 
-连接器新增 `tool_result_read`，可分页重读本连接已返回的结果或重显单张图片，减少重复导出；符号核对答案可直接引用同图图例。这些修复经自动化测试和独立维护副本验证；本版未再进行豆包真实会话复测，实际耗时与结果以具体图纸和会话为准。
+一键接入仍有填写连接器名称时中断的已知记录，尚未修复；可用“手动接入”中的名称、STDIO 类型和完整命令配置，当前用户已反馈手动连接成功。连接成功后保留现有连接器，不必反复安装或重新创建。
+
+保留 preview.50 的 LOPA 局部边界核对、跨排设施选项和尺寸链修复，MCP 仍为 41 个工具。
 
 ## 开始使用
 
